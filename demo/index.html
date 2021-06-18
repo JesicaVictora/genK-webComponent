@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../pokemon-chart.js';
+
+
+    const stats = [
+                   {"base_stat":88,"effort":1,"stat":{"name":"hp","url":"https://pokeapi.co/api/v2/stat/1/"}},
+                   {"base_stat":156,"effort":0,"stat":{"name":"attack","url":"https://pokeapi.co/api/v2/stat/2/"}},
+                   {"base_stat":56,"effort":0,"stat":{"name":"defense","url":"https://pokeapi.co/api/v2/stat/3/"}},
+                   {"base_stat":12,"effort":0,"stat":{"name":"special-attack","url":"https://pokeapi.co/api/v2/stat/4/"}},
+                   {"base_stat":48,"effort":0,"stat":{"name":"special-defense","url":"https://pokeapi.co/api/v2/stat/5/"}},
+                   {"base_stat":44,"effort":0,"stat":{"name":"speed","url":"https://pokeapi.co/api/v2/stat/6/"}}
+                   ];
+
+                
+                  
+    render(
+      html`
+        <pokemon-chart .stats=${stats} >
+       
+        </pokemon-chart>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>

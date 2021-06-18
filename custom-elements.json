@@ -1,0 +1,22 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "pokemon-chart",
+      "path": "./pokemon-chart.js",
+      "attributes": [
+        {
+          "name": "stats",
+          "type": "array"
+        }
+      ],
+      "properties": [
+        {
+          "name": "stats",
+          "attribute": "stats",
+          "type": "array"
+        }
+      ]
+    }
+  ]
+}
